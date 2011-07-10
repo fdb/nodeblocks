@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="site.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/nb-api.js"></script>
+  <script type="text/javascript" src="js/nb-ui.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="panel header">
+      <h1>Nodeblocks</h1>
+    </div>
+    <div class="panel main">
+      <div class="tab-header">
+        <a href="#viewer" class="active">Viewer</a>
+        <a href="#spreadsheet">Spreadsheet</a>
+      </div>
+      <div id="viewer" class="tab viewer">
+        <h2>Viewer</h2>
+      </div> <!-- .viewer -->
+      <div id="spreadsheet" class="tab spreadsheet">
+        <h2>Spreadsheet</h2>
+      </div> <!-- .spreadsheet -->
+    </div> <!-- .main -->
+    <div class="panel library">
+      <h2>Library</h2>
+      <ul class="root">
+      </ul>
+    </div> <!-- .library -->    
+    <div class="panel parameters">
+      <h2>Parameters</h2>
+    </div> <!-- .parameters -->
+    <div id="network" class="panel network">
+      <h2>Network</h2>
+    </div> <!-- .network -->
+</div> <!-- .container -->
+
+<script type="text/javascript">
+    nb.ui.init();
+</script>
+</body>
+</html>

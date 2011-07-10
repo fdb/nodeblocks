@@ -1,0 +1,164 @@
+/* Basic typography */
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: small;
+    color: .222;
+}
+
+h1 {
+    font-size: 18px;
+    color: #eee;
+    text-shadow: #000 0px 1px 0px;
+    padding: 10px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 15px;
+    text-align: center;
+    background: #666;
+    color: #eee;
+    text-shadow: #000 0px 1px 0px;
+    padding:5px 0;
+    margin: 0;
+}
+
+p {
+    padding: 1em 0 0 0;
+    margin: 0;
+    line-height: 125%;
+}
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* Main layout */
+
+body {
+    background: #222;
+}
+
+.panel {
+    position: absolute;
+    overflow: hidden;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+}
+
+.library {
+    top: 50px;
+    bottom: 300px;
+    left: 0;
+    width: 195px;
+}
+
+.main {
+    top: 50px;
+    right: 200px;
+    bottom: 300px;
+    left: 200px;
+}
+
+.parameters {
+    top: 50px;
+    right: 0;
+    bottom: 300px;
+    width: 195px;
+}
+
+.network {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 295px;
+}
+
+.tab-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 30px;
+    left: 0;
+    background: transparent;
+}
+
+.tab-header a {
+    float: left;
+    height: 30px;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    text-decoration: none;
+    color: #eee;
+    background: gray;
+    background: gray -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%);
+    background: gray -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    background: gray linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%);
+    border-radius: 2px 2px 0px 0px;
+}
+
+.tab-header a.active {
+    background: #e8e8e8;
+    color: #222;
+}
+
+.tab {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 5px solid #e8e8e8;
+}
+
+.viewer {
+    background: #e8e8e8;
+}
+
+.spreadsheet {
+    display: none;
+    background: #e8e8e8;
+}
+
+/* Library */
+
+.library {
+    border-radius: 0 5px 5px 0px;
+    background: #e8e8e8;
+}
+
+.library ul {
+    margin: 5px 0 0 5px;
+    padding: 0;
+}
+
+.library li {
+    height: 20px;
+}
+
+.library li a {
+    text-decoration: none;
+    color: #222;
+}
+
+/* Parameters */
+
+.parameters {
+    background: #e8e8e8;
+}
+
+/* Network */
+
+.network {
+    background: #111;
+}

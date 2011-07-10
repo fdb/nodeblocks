@@ -8,7 +8,7 @@ nodeblocks.views = {};
 
 nodeblocks.views.hello = function(request, response) {
     response.writeHead(200, {"Content-Type": "text/html"});
-    response.write("<html><strong>Hello, World!</strong></html>");
+    response.write("<html><strong>Hello</strong></html>");
     response.end();
 };
 
