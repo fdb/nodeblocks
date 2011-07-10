@@ -39,7 +39,21 @@ nb.ui.initTabs = function() {
 nb.ui.initLibrary = function() {
     nb.api.listNodes(function(data) {
         $(data).each(function(index, node) {
-            $('.library .root').append('<li><a href="#" title="' + node.description + '">' + node.displayName + '</a></li>');
+            $('.library .root').append('<li><a href="#" title="' + node.description + '" identifier="' + node.id + '">' + node.displayName + '</a></li>');
         });
     });
+    $('.library li a').live('click', function() {
+        var identifier = $(this).attr('identifier');
+        nb.ui.createNode(identifier);
+    });
+    
+};
+
+// Public: Create a new node in the network.
+//
+// identifier - The fully qualified name, e.g. "nb.geo.circle".
+// 
+// Returns nothing.
+nb.ui.createNode = function(identifier) {
+    console.log(identifier);
 };
