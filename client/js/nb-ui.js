@@ -1,3 +1,5 @@
+// Nodeblocks user interface.
+
 // Global namespace.
 var nb = nb || {};
 

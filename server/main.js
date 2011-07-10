@@ -1,3 +1,5 @@
+// Nodeblocks node.js server.
+
 var http = require("http");
 
 // Global namespace.
